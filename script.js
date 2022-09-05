@@ -12,7 +12,7 @@ const selectMediaStream = async function () {
       videoElement.play();
     };
   } catch (error) {
-    console.error(`error here: ${error.message}`);
+    console.error(`error here: ${error.status}, ${error.message}`);
   }
 };
 
@@ -23,4 +23,5 @@ btn.addEventListener("click", async () => {
   btn.disabled = false;
 });
 
+// Nore sure about this
 selectMediaStream();
